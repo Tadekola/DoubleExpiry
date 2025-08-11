@@ -1,0 +1,22 @@
+[MASTER]
+ignore=.git,__pycache__,.venv,build,dist
+extension-pkg-whitelist=numpy,pandas
+
+[MESSAGES CONTROL]
+disable=
+    C0111, # missing docstring
+    C0103, # invalid name
+    C0330, # bad continuation
+    C1801, # len-as-condition
+    W0511, # fixme
+    W0212, # protected-access
+    W0621, # redefined-outer-name
+    R0903, # too-few-public-methods
+    R0914, # too-many-locals
+
+[FORMAT]
+max-line-length=100
+
+[DESIGN]
+max-args=6
+max-attributes=12
