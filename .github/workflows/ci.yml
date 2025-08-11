@@ -32,14 +32,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run tests
+      - name: Run tests with coverage (60% minimum)
         env:
           PAGER: cat
         run: |
-          pytest -q
-
-      - name: Coverage (optional)
-        if: always()
-        run: |
-          coverage run -m pytest || true
-          coverage report -m || true
+          coverage run -m pytest
+          coverage report -m --fail-under=60

@@ -1,5 +1,7 @@
 # DoubleExpiry
 
+[![CI](https://github.com/Tadekola/DoubleExpiry/actions/workflows/ci.yml/badge.svg)](https://github.com/Tadekola/DoubleExpiry/actions/workflows/ci.yml)
+
 An options trading recommender focused on double-expiry calendar strategies, applying mechanical rules to market data for consistent decisions.
 
 ## Features
